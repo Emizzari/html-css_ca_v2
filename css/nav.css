@@ -1,0 +1,126 @@
+/* FONTS:
+NAVIGATION TOP FONT: font-family: 'Kodchasan', sans-serif;
+HEADLINE FONT: font-family: 'Thasadith', sans-serif;
+SUBHEADLINE FONT: font-family: 'Livvic', sans-serif;
+BODY FONT: font-family: 'Darker Grotesque', sans-serif;
+------------------------------------------------------------*/
+
+/* COLOUR PALETTE:
+#59AA33; - Dark green
+#A0E95A; - Green
+#99BF93; - Light green
+#1A1A1A; - Dark grey
+#F25353; - Red
+------------------------------------------------------------*/
+
+/* NAVIGATION TOP STYLES
+------------------------------------------------------*/
+.nav-top{
+  position: sticky;
+  top:0;
+  text-align: right;
+  height: 60px;
+  line-height: 60px;
+  background: #99BF93;
+}
+
+.menu{
+  margin: 0 20px 0 0;
+}
+
+.menu a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  line-height: 60px;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+#active{
+  background: #59AA33;
+}
+
+.menu a:hover{
+  background: #59AA33;
+  transition: .2s;
+}
+
+.menu a:active{
+  background: #A0E95A;
+  transition: .1s;
+}
+
+.logo img{
+  float: left;
+  line-height: 60px;
+  z-index: 5;
+  height: 40px;
+  margin: 10px 5px;
+}
+
+label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 60px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle{
+  display: none;
+}
+
+
+/* MOBILE
+--------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  label{
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu{
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .logo img{
+    height: 30px;
+    margin: 15px 5px;
+  }
+
+  .menu a{
+    display: block;
+    background: #99BF93;
+    border-top: 1px solid black;
+    margin: 0;
+    padding: 0;
+  }
+
+  #toggle:checked + .menu{
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+/* TABLET
+------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width:1024px){
+ .logo img{
+   height: 22px;
+   margin: 19px 0px 0 2px;
+ }
+}
+
+/* DESKTOP
+------------------------------------------------------------*/
+@media only screen and (min-width: 1025px){
+  .logo img{
+    height: 40px;
+    margin: 10px 0px 0 10px;
+  }
+}

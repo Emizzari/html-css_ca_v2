@@ -1,0 +1,159 @@
+/* FONTS:
+NAVIGATION TOP FONT: font-family: 'Kodchasan', sans-serif;
+HEADLINE FONT: font-family: 'Thasadith', sans-serif;
+SUBHEADLINE FONT: font-family: 'Livvic', sans-serif;
+BODY FONT: font-family: 'Darker Grotesque', sans-serif;
+------------------------------------------------------------*/
+
+/* COLOUR PALETTE:
+#59AA33; - Dark green
+#A0E95A; - Green
+#99BF93; - Light green
+#1A1A1A; - Dark grey
+#F25353; - Red
+------------------------------------------------------------*/
+/* FOOTER GLOBAL
+------------------------------------------------------------*/
+.footer{
+  padding: 1%;
+}
+
+.tourist-info{
+  text-align: center;
+  margin: 0px;
+}
+
+.tourist-info a{
+  font-size: 18px;
+  color: black;
+  padding-bottom: .5px;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.tourist-info a:hover{
+  text-decoration: none;
+  border-bottom: 0px solid black;
+}
+
+/* MOBILE
+------------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  footer{
+    background-image: url('../images/mobile/footer/footer-mobile.png');
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 30px;
+  }
+
+  .socials{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .socials a img{
+    width: 25px;
+    margin: 2.5px;
+  }
+
+  .tourist-info{
+    text-align: center;
+    margin: 0px;
+  }
+
+  .mobile-info{
+    margin: 1%;
+    padding: 2.5px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .desktop-info{
+    display: none;
+  }
+}
+
+
+/* TABLET
+------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width:1024px){
+  footer{
+    background-image: url('../images/tablet/footer/footer-tablet.png');
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 30px;
+  }
+
+  .socials{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .socials a img{
+    width: 30px;
+    margin: 2.5px;
+  }
+
+  .tourist-info{
+    text-align: center;
+    margin: 0px;
+  }
+
+  .tourist-info a{
+    font-size: 20px;
+  }
+
+  .mobile-info{
+    margin: 1%;
+    padding: 2.5px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .desktop-info{
+    display: none;
+  }
+}
+
+/* FOOTER DESKTOP
+------------------------------------------------------------*/
+@media only screen and (min-width: 1025px){
+  footer{
+    background-image: url('../images/desktop/footer/footer-desktop.png');
+    bottom: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .socials{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .socials a img{
+    width: 40px;
+    margin: 2.5px;
+  }
+  .tourist-info a{
+    font-size: 22px;
+  }
+
+  .desktop-info{
+    padding: 2.5px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .mobile-info{
+    display: none;
+  }
+}

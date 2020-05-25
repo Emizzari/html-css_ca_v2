@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque|Kodchasan|Livvic|Thasadith&display=swap');
+@import url("footer.css");
+@import url("nav.css");
+@import url("main-styles.css");
+/*@import url("nav-tonnessen.css"); *insert after feedback*/
+
+/* FONTS:
+NAVIGATION TOP FONT: font-family: 'Kodchasan', sans-serif;
+HEADLINE FONT: font-family: 'Thasadith', sans-serif;
+SUBHEADLINE FONT: font-family: 'Livvic', sans-serif;
+BODY FONT: font-family: 'Darker Grotesque', sans-serif;
+------------------------------------------------------------*/
+
+/* COLOUR PALETTE:
+#59AA33; - Dark green
+#A0E95A; - Green
+#99BF93; - Light green
+#1A1A1A; - Dark grey
+#F25353; - Red
+------------------------------------------------------------*/
+
+/* GLOBAL STYLES:
+------------------------------------------------------------*/
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+main{
+  margin: 0 0 10px 0;
+}
+
+h1{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Thasadith', sans-serif;
+  color: #59AA33;
+}
+
+h2, h3{
+  margin: 0;
+  padding: 0;
+  font-family: 'Livvic', sans-serif;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  margin-top: 10px;
+}
+
+/* MOBILE
+------------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  main{
+    font-size: 19px;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+}
+
+/* TABLET
+------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width:1024px){
+  main{
+    font-size: 21px;
+  }
+
+  h1{
+    font-size: 45px;
+  }
+}
+
+/* DESKTOP
+------------------------------------------------------------*/
+@media only screen and (min-width: 1025px){
+  main{
+    font-size: 22px;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+}
