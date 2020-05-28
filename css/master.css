@@ -1,35 +1,64 @@
-@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque|Kodchasan|Livvic|Thasadith&display=swap');
-@import url("footer.css");
-@import url("nav.css");
-@import url("main-styles.css");
-/*@import url("nav-tonnessen.css"); *insert after feedback*/
-
-/* FONTS:
-NAVIGATION TOP FONT: font-family: 'Kodchasan', sans-serif;
-HEADLINE FONT: font-family: 'Thasadith', sans-serif;
-SUBHEADLINE FONT: font-family: 'Livvic', sans-serif;
-BODY FONT: font-family: 'Darker Grotesque', sans-serif;
-------------------------------------------------------------*/
-
 /* COLOUR PALETTE:
 #59AA33; - Dark green
 #A0E95A; - Green
 #99BF93; - Light green
 #1A1A1A; - Dark grey
 #F25353; - Red
-------------------------------------------------------------*/
+------------------------------------------------------------ */
+
+
+/* FONTS:
+NAVIGATION TOP FONT: font-family: 'Kodchasan', sans-serif;
+HEADLINE FONT: font-family: 'Thasadith', sans-serif;
+SUBHEADLINE FONT: font-family: 'Livvic', sans-serif;
+BODY FONT: font-family: 'Darker Grotesque', sans-serif;
+------------------------------------------------------------ */
+
+
+/* CSS IMPORT: --------------------------------------------- */
+
+
+@import url("main.css");
+@import url("home.css");
+
+
+@import url("footer.css");
+@import url("nav.css");
+
+/* --------------------------------------------------------- */
+
+
+/* FONT IMPORT: -------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque|Kodchasan|Livvic|Thasadith&display=swap');
+/* --------------------------------------------------------- */
+
+
+
 
 /* GLOBAL STYLES:
-------------------------------------------------------------*/
+------------------------------------------------------------ */
+html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 body{
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
   font-family: 'Darker Grotesque', sans-serif;
 }
 
-main{
-  margin: 0 0 10px 0;
+main img{
+  width: 100%;
+}
+
+section{
+  margin: 0;
+  padding: 0;
 }
 
 h1{
@@ -51,9 +80,7 @@ p{
   padding: 0;
 }
 
-.main{
-  margin-top: 10px;
-}
+
 
 /* MOBILE
 ------------------------------------------------------------*/
