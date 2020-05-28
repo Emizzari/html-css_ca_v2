@@ -1,0 +1,380 @@
+/* MAIN: --------------------------------------------- */
+.main{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.main--grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.main__section--grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+}
+
+.main__section--tours{
+  grid-gap: 50px;
+  margin: 50px;
+}
+
+.main--grey{
+  background: rgb(250, 250, 250);
+}
+.main__section__section{
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background: linear-gradient(150deg, rgb(245, 255, 112), rgb(104, 179, 44), rgb(3, 80, 44));
+  background: #FFF;
+}
+
+/* --------------------------------------------------- */
+
+
+/* BUTTONS: ------------------------------------------ */
+.button{
+  border: 0px solid transparent; 
+  padding: 20px 50px;
+  margin-top: 30px;
+  font-size: 30px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Livvic', sans-serif;
+  text-transform: uppercase;
+  transition: 1s;
+}
+
+.button:hover{
+  padding: 20px 80px;
+}
+
+.button--green{
+  background: linear-gradient(150deg, rgb(144, 235, 26), rgb(43, 100, 16));
+}
+
+.button--green:hover{
+  background:  linear-gradient(150deg,rgb(230, 250, 55),rgb(7, 122, 69));
+}
+
+.button--red{
+  background: linear-gradient(150deg, rgb(248, 58, 84), rgb(94, 11, 25));
+  color: #FFF;
+}
+
+.button--red:hover{
+  background:  linear-gradient(150deg,rgb(248, 58, 175),rgb(71, 11, 94));
+}
+
+.button--cta{
+  border: 0px solid transparent;
+  background: linear-gradient(150deg,rgb(144, 235, 26),rgb(43, 100, 16));
+  text-transform: uppercase;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Livvic', sans-serif;
+  transition: .5s ease-in-out;
+  color: rgb(18, 37, 2);
+}
+
+.button--cta:hover{
+  padding: 20px 50px;
+  background: linear-gradient(150deg,rgb(230, 250, 55),rgb(7, 122, 69));
+}
+/* --------------------------------------------------- */
+
+
+/* LINKS: -------------------------------------------- */
+.link{
+  color: rgb(153, 0, 0)
+}
+
+.link:hover{
+  text-decoration: none;
+}
+/* --------------------------------------------------- */
+
+
+/* HOME MOBILE
+------------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  .main__section--about{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* HOME TABLET
+------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width:1024px){
+
+}
+
+/* HOME DESKTOP
+------------------------------------------------------------*/
+@media only screen and (min-width: 1025px){
+
+}
+
+
+
+
+
+
+
+
+/* CONTACT GLOBAL
+------------------------------------------------------------*/
+.contact-info{
+  margin: 5px 10px 20px 10px;
+}
+
+.travel{
+  margin: 5px 10px 20px 10px;
+}
+
+.contact-info p, h3{
+  padding: 2px 0;
+}
+
+.contact-info h2{
+  padding: 8px 0;
+}
+
+.contact-info h3{
+  padding-top: 10px;
+}
+
+.travel p{
+  margin: 0 0 10px 0;
+}
+
+.travel a{
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.travel a:hover{
+  border-bottom: 0px solid black;
+}
+
+.contact-links{
+  margin: 30px 0;
+}
+
+/* CONTACT MOBILE
+------------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  .contact-info p, h2, h3{
+    text-align: center;
+  }
+
+  .travel p, h2, h3{
+    text-align: center;
+  }
+
+  .contact-info h2{
+    font-size: 23px;
+  }
+
+  .travel iframe{
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+  }
+
+  .contact img{
+    display: none;
+  }
+}
+
+/* CONTACT TABLET
+------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width:1024px){
+  .contact{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 950px;
+  }
+
+  .contact h1, h2{
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .travel iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .contact img{
+    display: none;
+  }
+}
+
+/* CONTACT DESKTOP
+------------------------------------------------------------*/
+@media only screen and (min-width: 1025px){
+  .contact{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+  }
+
+  .contact h1, h2{
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .travel iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .contact img{
+    float: right;
+    width: 100%;
+    max-width: 525px;
+    margin-right: 10px;
+  }
+}
+
+/* ABOUT GLOBAL STYLES
+------------------------------------------------------------*/
+.about img{
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.about div{
+  margin: 10px 5px 25px 5px;
+}
+
+.charity a{
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+/* ABOUT MOBILE
+------------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+  .button{
+    padding: 20px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .button:hover{
+    padding: 20px 50px;
+  }
+
+
+  .about div{
+    text-align: center;
+  }
+
+  .charity a{
+    text-align: center;
+    font-size: 19px;
+  }
+
+  .charity a:hover{
+    border-bottom: 0px solid black;
+  }
+
+  .you ul{
+    padding: 0 10px;
+    margin: 0 0 0 20px;
+    font-size: 19px;
+    text-align: left;
+  }
+
+  .charity-image{
+    width: 100%;
+  }
+
+  .group2{
+    display: none;
+  }
+
+  .group1{
+    width: 100%;
+  }
+
+  #charity-image{
+    display: none;
+  }
+}
+
+/* ABOUT TABLET
+------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width:1024px){
+  #charity-image{
+    float:right;
+    width: 38%;
+    margin: 10px 0 5px 10px;
+  }
+
+  .charity-image{
+    display: none;
+  }
+
+  .group2{
+    display: none;
+  }
+
+  .group1{
+    width: 100%;
+  }
+}
+
+/* ABOUT DESKTOP
+------------------------------------------------------------*/
+@media only screen and (min-width: 1025px){
+  .group1{
+    display: none;
+  }
+
+  .about h1{
+    text-align: center;
+  }
+
+  .who img{
+    float: right;
+    width: 40%;
+    margin: 40px 0px 5px 10px;
+  }
+
+  #charity-image{
+    float:left;
+    width: 40%;
+    margin: 10px 15px 5px 0px;
+  }
+
+  .charity-image{
+    display: none;
+  }
+
+  .about{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+  }
+
+  .about h1, h2{
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .clearfix{
+    clear: both;
+  }
+}
