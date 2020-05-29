@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-      <meta charset="utf-8">
-      <meta name="description" content="Re-cycle provides eco-friendly bicycle tours in Risør, Norway. Where 10% of the profit goes to charity">
-      <meta name="keywords" content="eco-friendly, enviorment, bicycle, tours, guide, risør, norway, risor">
-      <meta name="author" content="Emilie H. K. Tønnessen">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/master.css">
-      <title>Re-Cycle - Tours</title>
+    <!-- Technical: -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: -->
+    <meta name="description" content="Re-cycle provides eco-friendly bicycle tours in Risør, Norway. Where 10% of the profit goes to charity">
+    <meta name="keywords" content="eco-friendly, enviorment, bicycle, tours, guide, risør, norway, risor">
+    <meta name="author" content="Emilie H. K. Tønnessen">
+
+    <!-- CSS: -->
+    <link rel="stylesheet" href="css/master.css">
+
+    <!-- Page Title: -->
+    <title>Re-Cycle - Tours</title>
 
     <!-- Font Awesome: -->
     <script src="https://kit.fontawesome.com/f0fe9be787.js" crossorigin="anonymous"></script>
-
 </head>
 
 
  <body>
-<!-- NAVIGATION TOP: --------------------------------------------------------------------->
+    <!-- NAVIGATION: ------------------------------------------------------------------------->
     <nav class="nav">
         <a href="index.html"><img class="nav__img--logo" src="images/logo/logo.png" alt="Logo"></a>
         <div class="nav__block--mobile-icons">
@@ -32,42 +38,99 @@
             ><a href="about.html"><li>about</li></a>
         </ul>
     </nav>
-<!---------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------->
 
 
-<!-- HEADER: ----------------------------------------------------------------------------->
-    <header class="header">
-        <h1 class="header__h1">tours</h1>
-    </header>
-<!---------------------------------------------------------------------------------------->
+    <!-- HEADER: ----------------------------------------------------------------------------->
+    <header class="header"></header>
+    <!---------------------------------------------------------------------------------------->
 
 
-<!-- MAIN: ------------------------------------------------------------------------------->
-     <main class="main main--grey">
-        <section class="main__section--grid">
-            <div class="main__section__block">
-                <h2>What we provide:</h2>
-                <ul>
-                    <li>Bike</li>
-                    <li>Helmet</li>
-                    <li>First aid kit</li>
-                </ul>
-            </div>
-
-
-            <div class="main__section__block">
-                <h2>We recommend you to bring:</h2>
-                <ul>
-                    <li>Backpack</li>
-                    <li>Water</li>
-                    <li>Camera</li>
-                    <li>Energibar for the longer tours</li>
-                    <li>Clothes for the weather</li>
-                </ul>
-            </div>
+    <!-- MAIN: ------------------------------------------------------------------------------->
+    <main class="main main--tours">
+        <!-- Tours: -->
+        <section class="main__section main__section--tours">
         </section>
 
-        <section class="main__section--tours"></section>
+        <!-- Order/form + Info: -->
+        <section class="main__section main__section--order">
+            <form class="main__section__form--order" action="">
+
+                <!-- Headline -->
+                <h2 class="form__h2">order now</h2>
+
+                <!-- First Name: -->
+                <section class="form__section form__section--firstName">
+                    <h5 class="form__section__h5">First name:</h5>
+                    <input class="form__section__input" placeholder="First name.." id="firstName" />
+                   <div class="form__section__block--error" id="firstNameError"><span class="italic">- Please enter your first name</span></div>
+                </section>
+                
+                <!-- Last Name: -->
+                <section class="form__section form__section--lastName">
+                    <h5 class="form__section__h5">Last Name:</h5>
+                    <input class="form__section__input" placeholder="Last name.." id="lastName" />
+                   <div class="form__section__block--error" id="lastNameError"><span class="italic">- Please enter your last name</span></div>
+                </section>
+                
+                <!-- Email: -->
+                <section class="form__section form__section--email">
+                    <h5 class="form__section__h5">Email:</h5>
+                    <input class="form__section__input" placeholder="Email.." id="email" />
+                   <div class="form__section__block--error" id="emailError"><span class="italic">- Please enter a valid email address</span></div>
+                </section>
+
+                <!-- Tour: -->
+                <section class="form__section form__section--tour">
+                    <h5 class="form__section__h5">Tour:</h5>
+                    <select class="form__section__select" name="tours">
+                        <option value="city">City Tour</option>
+                        <option value="krana">Krana</option>
+                        <option value="urheia" selected>Urheia</option>
+                        <option value="fransåsen">Fransåsen</option>
+                    </select>
+                </section>
+                
+                <!-- Message: -->
+                <section class="form__section form__section--message">
+                    <h5 class="form__section__h5">Message:</h5>
+                    <textarea class="form__section__textarea" placeholder="Want to add anything?" id="message"></textarea>
+                </section>
+                
+                <!-- Submit Button -->
+                <section class="form__section form__section--button">
+                    <button class="button button--green btnContactArea" type="submit">order</button>
+                </section>
+
+                <!-- Feedback message: -->
+                <section id="submitMessage" class="form__section form__section--feedback">
+                    <div>Thank you!</div>
+                    <div>Your order has been successfully sent. We will contact you very soon!</div>
+                </section>
+            </form>
+
+            <!-- Information: -->
+            <div class="main__section__block main__section__block--info">
+                <div>
+                    <h3>We provide:</h3>
+                    <ul>
+                        <li>Bike</li>
+                        <li>Helmet</li>
+                        <li>First aid kit</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>We recommend you to bring:</h3>
+                    <ul>
+                        <li>Backpack</li>
+                        <li>Water</li>
+                        <li>Camera</li>
+                        <li>Energibar for the longer tours</li>
+                        <li>Clothes for the weather</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main> 
     <!----------------------------------------------------------------------------------------->
 
@@ -97,8 +160,11 @@
     </footer>
     <!----------------------------------------------------------------------------------------->
 
+    <!-- JAVASCRIPT: -------------------------------------------------------------------------->
+    <script src="js/mobile-menu.js"></script>
     <script src="js/product.js"></script>
     <script src="js/tours.js"></script>
-<!-- END: --------------------------------------------------------------------------------->
+    <script src="js/order.js"></script>
+    <!----------------------------------------------------------------------------------------->
   </body>
 </html>

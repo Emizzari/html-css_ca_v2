@@ -7,18 +7,18 @@ tours.forEach(function(tour){
 
     html +=`
         <!-- Tour ${tour.id} -->
-        <section class="main__section--${tour.id}">
-            <img class="" src="${tour.image}" alt="${tour.name}">
-            <div class="">
-                <h2 class="">${tour.name}</h2>
-                <ul class="">
-                    <li><span class="bold">Prices:</span> ${tour.prices}</li>
+        <section class="main__section--tour__section">
+            <img class="main__section--tour__section__img" src="${tour.image}" alt="${tour.name}">
+            <div class="main__section--tour__section__block">
+                <h2 class="main__section--tour__section__block__h2">${tour.name}</h2>
+                <ul class="main__section--tour__section__block__list">
+                    <li><span class="bold">Price:</span> ${tour.price}</li>
                     <li><span class="bold">Difficulty:</span> ${tour.difficulty}</li>
                     <li><span class="bold">Time:</span> ${tour.time}</li>
                 </ul>
-                <p class="">${tour.details}</p>  
+                <p class="main__section--tour__section__block__p">${tour.details}</p>  
             </div>
-            <iframe class="" src="${tour.map}"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe class="main__section--tour__section__iframe" src="${tour.map}"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </section>
     `;
 });
