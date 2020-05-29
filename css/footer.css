@@ -15,7 +15,8 @@ BODY FONT: font-family: 'Darker Grotesque', sans-serif;
 /* FOOTER GLOBAL
 ------------------------------------------------------------*/
 .footer{
-  padding: 1%;
+  padding: 20px;
+  margin: 0;
 }
 
 .tourist-info{
@@ -40,11 +41,10 @@ BODY FONT: font-family: 'Darker Grotesque', sans-serif;
 ------------------------------------------------------------*/
 @media only screen and (max-width: 480px){
   footer{
-    background-image: url('../images/mobile/footer/footer-mobile.png');
+    background: #99BF93 ;
     bottom: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-top: 30px;
   }
 
   .socials{
@@ -81,11 +81,10 @@ BODY FONT: font-family: 'Darker Grotesque', sans-serif;
 ------------------------------------------------------------*/
 @media only screen and (min-width: 481px) and (max-width:1024px){
   footer{
-    background-image: url('../images/tablet/footer/footer-tablet.png');
+    background: #99BF93 ;
     bottom: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-top: 30px;
   }
 
   .socials{
@@ -125,11 +124,10 @@ BODY FONT: font-family: 'Darker Grotesque', sans-serif;
 ------------------------------------------------------------*/
 @media only screen and (min-width: 1025px){
   footer{
-    background-image: url('../images/desktop/footer/footer-desktop.png');
+    background: #99BF93 ;
     bottom: 0;
     background-repeat: no-repeat;
     width: 100%;
-    margin: 10px 0px 0px 0px;
   }
 
   .socials{
