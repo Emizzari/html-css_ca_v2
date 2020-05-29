@@ -6,6 +6,7 @@
   z-index: 999;
   width: 100%;
   box-sizing: border-box;
+  transition: .5s ease-in-out;
 }
 /* --------------------------------------------------- */
 
