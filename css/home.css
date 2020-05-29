@@ -104,7 +104,7 @@
         grid-template-columns: 1fr;
     }
 
-    .main__section__block:nth-child(2){
+    .main__section__block--img{
         display: none;
     }
 
@@ -121,9 +121,13 @@
 
 /* TABLET: ------------------------------------------- */
 @media only screen and (min-width: 481px) and (max-width:1024px){
-    .main__section__block:nth-child(2){
-        display: none;
-    }
+  .main__section__h2--contact{
+    font-size: 70px;
+  }
+
+  .main__section__block--img{
+    display: none;
+  }
 
     .main__section--about{
         display: block;
