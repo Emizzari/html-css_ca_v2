@@ -214,12 +214,12 @@
   text-transform: uppercase;
   padding: 30px 50px;
   border-radius: 50px;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 400;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
   font-family: 'Livvic', sans-serif;
   transition: .5s ease-in-out;
-  color: rgb(25, 48, 7);
+  color: #000;
 }
 
 .button--cta:hover{
