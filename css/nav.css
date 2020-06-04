@@ -7,6 +7,9 @@
   width: 100%;
   box-sizing: border-box;
   transition: .5s ease-in-out;
+}
+
+.nav--position--absolute{
   position: absolute;
   top: 0;
 }
