@@ -212,17 +212,18 @@
   border: 0px solid transparent;
   background: linear-gradient(150deg,rgb(144, 235, 26),rgb(43, 100, 16));
   text-transform: uppercase;
-  padding: 20px 30px;
+  padding: 30px 50px;
   border-radius: 50px;
   font-size: 20px;
+  font-weight: 600;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
   font-family: 'Livvic', sans-serif;
   transition: .5s ease-in-out;
-  color: rgb(18, 37, 2);
+  color: rgb(25, 48, 7);
 }
 
 .button--cta:hover{
-  padding: 20px 50px;
+  padding: 30px 70px;
   background: linear-gradient(150deg,rgb(230, 250, 55),rgb(7, 122, 69));
 }
 /* --------------------------------------------------- */
