@@ -401,6 +401,10 @@
   #charity-image{
     display: none;
   }
+
+  .form__h2{
+    font-size: 23px;
+  }
 }
 
 /* ABOUT TABLET

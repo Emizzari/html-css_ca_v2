@@ -8,11 +8,6 @@
   box-sizing: border-box;
   transition: .5s ease-in-out;
 }
-
-.nav--position--absolute{
-  position: absolute;
-  top: 0;
-}
 /* --------------------------------------------------- */
 
 
@@ -134,4 +129,9 @@
   .nav__block--mobile-icons{
     display: none;
   }
+
+  .nav--position--absolute{
+  position: absolute;
+  top: 0;
+}
 }

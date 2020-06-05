@@ -1,9 +1,4 @@
-/* Info */
-
-.tour-info{
-
-}
-
+/* TOUR INFORMATION: ------------------------ */
 .tour-info__section{
     background: rgb(235, 240, 240);
     padding: 10px;
@@ -17,13 +12,19 @@
     border: 2px solid #000;
     padding: 20px;
 }
+/* ------------------------------------------ */
 
+
+/* INFO HEADLINE: --------------------------- */
 .tour-info__section__h3{
     border-bottom: 2px solid rgb(26, 63, 8);
     padding-bottom: 5px;
     text-align: left;
 }
+/* ------------------------------------------ */
 
+
+/* LIST: ------------------------------------- */
 .tour-info__section__list{
     list-style: none;
     padding: 30px 0 0 0;
@@ -49,9 +50,17 @@
 .tour-info__section__list div:first-child{
     justify-content: center;
 }
+/* ------------------------------------------ */
 
+
+/* MOBILE: ---------------------------------- */
 @media only screen and (max-width: 480px){
    .tour-info__section__list{
-    grid-template-columns: 1fr 3fr;
-} 
+        grid-template-columns: 1fr 3fr;
+    } 
+
+    .tour-info__section__list__desc li{
+        padding-bottom: 24px;
+    }
 }
+/* ------------------------------------------ */
