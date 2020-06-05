@@ -1,0 +1,57 @@
+/* Info */
+
+.tour-info{
+
+}
+
+.tour-info__section{
+    background: rgb(235, 240, 240);
+    padding: 10px;
+}
+
+.tour-info__section:nth-child(1){
+    margin-bottom: 40px;
+}
+
+.block--border{
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+.tour-info__section__h3{
+    border-bottom: 2px solid rgb(26, 63, 8);
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.tour-info__section__list{
+    list-style: none;
+    padding: 30px 0 0 0;
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-gap: 20px;
+}
+
+.tour-info__section__list__desc li{
+    padding-bottom: 20px;
+    display: grid;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.tour-info__section__list__i li{
+    padding-bottom: 20px;
+    display: grid;
+    justify-self: center;
+    align-self: center; 
+}
+
+.tour-info__section__list div:first-child{
+    justify-content: center;
+}
+
+@media only screen and (max-width: 480px){
+   .tour-info__section__list{
+    grid-template-columns: 1fr 3fr;
+} 
+}

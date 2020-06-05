@@ -69,7 +69,8 @@
 .main__section--order{
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  background: linear-gradient(-90deg, rgb(0, 0, 0, 0), rgba(82, 241, 95, 0.3),  rgba(138, 223, 2, 0.3));
+  /* background: linear-gradient(-90deg, rgb(0, 0, 0, 0), rgba(82, 241, 95, 0.3),  rgba(138, 223, 2, 0.3)); */
+  /* background: rgb(230, 255, 219); */
 }
 
 /* form: */
@@ -96,8 +97,9 @@
   padding: 10px;
   margin-top: 5px;
   border-radius: 0;
-  border: 1px solid transparent;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.349);
+  border: 1px solid rgb(26, 63, 8);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  /* background: rgb(235, 240, 240); */
 }
 
 .form__section__textarea{
@@ -105,8 +107,8 @@
   padding: 10px;
   margin-top: 5px;
   border-radius: 0;
-  border: 1px solid transparent;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.349);
+  border: 1px solid rgb(26, 63, 8);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
   box-sizing: border-box;
 }
@@ -119,6 +121,10 @@
 .form__h2{
   grid-area: headline;
   text-align: center;
+  background: #59AA33;
+  color: #000;
+  padding: 20px 0px;
+  font-weight: 300;
 }
 
 .form__section--firstName{
@@ -184,7 +190,7 @@
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
   font-family: 'Livvic', sans-serif;
   text-transform: uppercase;
-  transition: 1s;
+  transition: .2s ease-in-out;
 }
 
 .button:hover{
