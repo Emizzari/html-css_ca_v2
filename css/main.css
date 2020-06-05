@@ -188,16 +188,20 @@
 }
 
 .button:hover{
-  padding: 20px 80px;
+  /* padding: 20px 80px; */
   cursor: pointer;
 }
 
 .button--green{
   background: linear-gradient(150deg, rgb(144, 235, 26), rgb(43, 100, 16));
+  background: #59AA33;
+  border-radius: 0;
 }
 
 .button--green:hover{
   background:  linear-gradient(150deg,rgb(230, 250, 55),rgb(7, 122, 69));
+  background: rgb(26, 53, 13);
+  color: #FFF;
 }
 
 .button--red{
@@ -233,7 +237,8 @@
 
 /* LINKS: -------------------------------------------- */
 .link{
-  color: rgb(153, 0, 0)
+  color: rgb(19, 48, 6);
+  font-weight: 600;
 }
 
 .link:hover{
