@@ -42,35 +42,120 @@
 <!---------------------------------------------------------------------------------------->
 
 <!-- MAIN: ------------------------------------------------------------------------------->
-<main class="main">
-          <div class="contact">
-              <h1 class="desktop-h1">CONTACT US</h1>
-              <img src="images/desktop/contact.jpg" alt="Risør">
-              <div class="contact-info">
-                  <p>For more information please contact us by email or phone</p>
-                  <h2>re-cycle_tours@hotmail.com</h2>
-                  <h2>+47 37 15 12 34</h2>
-                  <p>Monday to Sunday</p>
-                  <p>08:00 - 18:00</p>
-                  <h3>Address</h3>
-                  <p>Torvet 1</p>
-                  <p>4950, Risør</p>
-                  <p>Norway</p>
-              </div>
-              <div class="travel">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46872.519215126675!2d9.125596362033795!3d58.721755382910594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4647a883f921bf57%3A0x7e5b32f14d3ba7c4!2s4950%20Ris%C3%B8r!5e0!3m2!1sno!2sno!4v1572446556363!5m2!1sno!2sno"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                  <h2>How to get here</h2>
-                  <p><span class="bold">By Road:</span> Risør is located approximately three hours drive from Oslo and 1,5 hours drive from Kristiansand along the E18. </p>
+<main class="main main--contact">
+    <!-- Contact Form: -->
+    <form action="" id="contactForm" class="form">
+    
+        <!-- Headline: -->
+        <h2 class="form__h2">CONTACT FORM</h2>
+    
+        <!-- First Name: -->
+        <section class="form__section form__section--firstName">
+            <h5 class="form__section__h5">First name:</h5>
+            <div class="form__section__block">
+                <input class="form__section__block__input" placeholder="First name.." id="firstName" />
+            </div>
+            <p class="error" id="firstNameError"><span class="italic">- Please enter your first name</span></p>
+        </section>
+    
+        <!-- Last Name: -->
+        <section class="form__section form__section--lastName">
+            <h5 class="form__section__h5">Last Name:</h5>
+            <div class="form__section__block">
+                <input class="form__section__block__input" placeholder="Last name.." id="lastName" />
+            </div>
+            <p class="error" id="lastNameError"><span class="italic">- Please enter your last name</span></p>
+        </section>
+    
+        <!-- Email: -->
+        <section class="form__section form__section--email">
+            <h5 class="form__section__h5">Email:</h5>
+            <div class="form__section__block">
+                <input class="form__section__block__input" placeholder="Email.." id="email" />
+            </div>
+            <p class="error" id="emailError"><span class="italic">- Please enter a valid email address</span></p>
+        </section>
+    
+        <!-- Topic: -->
+        <section class="form__section form__section--topic">
+            <h5 class="form__section__h5">Topic:</h5>
+            <div class="form__section__block">
+                <input class="form__section__block__input" placeholder="Topic.." id="topic" />
+            </div>
+            <p class="error" id="topicError"><span class="italic">- Please describe what the message is about</span></p>
+        </section>
+    
+        <!-- Message: -->
+        <section class="form__section form__section--message">
+            <h5 class="form__section__h5">Message:</h5>
+            <div class="form__section__block">
+                <textarea class="form__section__block__textarea" placeholder="Ask us anything.." id="message"></textarea>
+            </div>
+            <p id="messageError" class="error"><span class="italic">- Please enter more than 6 letters</span></p>
+        </section>
+    
+        <!-- Submit Button -->
+        <section class="form__section form__section--btn">
+            <button class="button button--green" type="submit">send</button>
+        </section>
+    
+        <!-- Feedback: -->
+        <section class="form__section form_section--feedback" id="submitMessage">
+            <p>Thank you!</p>
+            <p>Your message has been successfully sent. We will contact you very soon!</p>
+        </section>
+    </form>
+
+
+
+
+
+    <section class="main__section main__section--contact-information">
+        <h1 class="main__section__h1">contact us</h1>
+
+        <p class="main__section__p">For support or any questions - Email us at <a class="link" href="emailto:example@email.com">re-cycle@support.com</a> or call us at +47 37 15 12 34.</p>
+
+        <section class="contact-information__section">
+            <label class="contact-information__section__label" for="one">Location</label>
+            <input class="contact-information__section__input" type="checkbox" id="one">
+            <div class="contact-information__section__block contact-information__section__block--1">
+                <p class="contact-information__section__block__p"><span class="bold">Address:</span> Torvet 1, 4950 Risør Norway</p>
+                <iframe class="contact-information__section__block__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46872.519215126675!2d9.125596362033795!3d58.721755382910594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4647a883f921bf57%3A0x7e5b32f14d3ba7c4!2s4950%20Ris%C3%B8r!5e0!3m2!1sno!2sno!4v1572446556363!5m2!1sno!2sno"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </section>
+
+        <section class="contact-information__section">
+            <label class="contact-information__section__label" for="two">How to get here</label>
+            <input class="contact-information__section__input" type="checkbox" id="two">
+            <div class="contact-information__section__block contact-information__section__block--2">
+                <p><span class="bold">By Road:</span> Risør is located approximately three hours drive from Oslo and 1,5 hours drive from Kristiansand along the E18. </p>
                   <p><span class="bold">By Bus:</span> There are several daily departures between Oslo, Kristiansand and Stavanger with bus. The buses stops by E 18 at Vinterkjær bus stop. From there either corresponding local bus or taxi to Risør (10 minutes). </p>
                   <p><span class="bold">By Train:</span> The nearest railway station to Risør is Gjerstad stasjon. </p>
                   <div class="contact-links">
-                      <h3>Risør Taxi: +47 37 15 03 71</h3>
-                      <p><a href="https://akt.no/info/reise/rutetabeller/risoer-gjerstad-tvedestrand-vegaarshei-og-%C3%A5mli/">Risør bus routes</a></p>
-                      <p><a href="https://www.vy.no/en">Train and bus around Norway</a></p>
+                        <p class="contact-information__section__block__p">Risør Taxi: +47 37 15 03 71</p>
+                        <p class="contact-information__section__block__p"><a class="link" href="https://akt.no/info/reise/rutetabeller/risoer-gjerstad-tvedestrand-vegaarshei-og-%C3%A5mli/">Risør bus routes</a></p>
+                        <p class="contact-information__section__block__p"><a class="link" href="https://www.vy.no/en">Train and bus around Norway</a></p>
                   </div>
-              </div>
-          </div>
-      </main>
+
+            </div>
+        </section>
+
+        <section class="contact-information__section">
+            <label class="contact-information__section__label" for="four">Opening Hours</label>
+            <input class="contact-information__section__input" type="checkbox" id="four">
+            <div class="contact-information__section__block contact-information__section__block--4">
+                <p class="contact-information__section__block__p"><span class="bold">Monday to Sunday:</span> 08:00 - 18:00</p>
+            </div>
+        </section>
+        
+
+
+    </section>
+
+     
+
+
+    </main>
     <!-- FOOTER: ----------------------------------------------------------------------------->
     <footer>
         <div class="footer">
@@ -98,6 +183,7 @@
 
 
     <script src="js/mobile-menu.js"></script>
+    <script src="js/contact-form.js"></script>
 <!-- END: --------------------------------------------------------------------------------->
   </body>
 </html>

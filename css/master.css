@@ -16,8 +16,10 @@ BODY FONT: font-family: 'Darker Grotesque', sans-serif;
 
 
 /* CSS IMPORT: --------------------------------------------- */
+
 @import url("tours.css");
 @import url("main.css");
+@import url("contact-form.css");
 @import url("home.css");
 
 @import url("footer.css");
@@ -46,12 +48,13 @@ main img{
 
 section, article, div,
 h1, h2, h3, h4, h5, h6,
-a, p, ul, li,
+a, p, ul, li, label,
 button, iframe, input, textarea, img, i,
 main, nav, footer{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 h1{
